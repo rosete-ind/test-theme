@@ -8,7 +8,7 @@
     <h2>Leave a comment</h2>
     {% for comment in article.comments %}
       <div>
-        <h3>{{ comment.name }}</h3>
+        <h3>{{ comment.author }}</h3>
       <p>{{ comment.email }}</p>
         <div>{{ comment.content }}</div>
       </div>
