@@ -1,0 +1,8 @@
+<div id='qr-code'></div>
+<script>
+  new QRCode(document.getElementById('qr-code'),{
+    text: '{{ gift_card.qr_identifier }}',
+    width: 120,
+    height: 120
+  });
+</script>
