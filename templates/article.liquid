@@ -27,7 +27,7 @@
         {% for comment in article.comments %}
       <div>
         <h3>Commenter: {{ comment.author }}</h3>
-      <p>DOX this mofo!: {{ comment.email }}</p>
-        <div>This is what he said: {{ comment.content }}</div>
+      <p>{{ comment.email }}</p>
+        <div>{{ comment.content }}</div>
       </div>
       {% endfor %}
