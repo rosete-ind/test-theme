@@ -9,7 +9,7 @@
   </div>
   {% endfor %}
   <hr/>
-  <p>Total: {{ cart.total | money }}</p>
+  <p>Total: {{ cart.total_price | money }}</p>
   <button type='submit' name='checkout'>
     Checkout
   </button>
