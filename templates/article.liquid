@@ -6,13 +6,6 @@
 
   {% if article.comments_enabled? %}
     <h2>Leave a comment</h2>
-    {% for comment in article.comments %}
-      <div>
-        <h3>{{ comment.author }}</h3>
-      <p>{{ comment.email }}</p>
-        <div>{{ comment.content }}</div>
-      </div>
-      {% endfor %}
     {% form 'new_comment', article %}
       {{ form.errors | default_errors }}
       <div class='name'>
@@ -30,3 +23,11 @@
         <button type='submit'>Add comment</button>
       {% endform %}
     {% endif %}
+
+        {% for comment in article.comments %}
+      <div>
+        <h3>{{ comment.author }}</h3>
+      <p>{{ comment.email }}</p>
+        <div>{{ comment.content }}</div>
+      </div>
+      {% endfor %}
