@@ -6,5 +6,6 @@
 
 <body>
     {{content_for_layout}}
+    {{ 'style.js' | asset_url | script_tag}}
 </body>
 </html>
