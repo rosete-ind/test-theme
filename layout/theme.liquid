@@ -6,6 +6,6 @@
 <body>
   {% render 'header' %}
     {{content_for_layout}}
-    {{ 'style.css' | asset_url | stylesheet_tag }}
+    {{ 'style.css.liquid' | asset_url | stylesheet_tag }}
 </body>
 </html>
