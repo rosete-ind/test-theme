@@ -14,7 +14,7 @@
     </div>
     {% endfor %}
     <hr/>
-    <p>Total: {{ cart.total_price | money }}</p>
+    <p>Total: {{ cart.final_line_price | money }}</p>
     <button type='submit' name='update'>
       Update
     </button>
