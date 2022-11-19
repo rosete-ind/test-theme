@@ -6,7 +6,7 @@
   <div class='nav-link-container'>
     {%-  for link in linklists.main-menu.links -%}
       <div class='nav-links'>
-      <button class='dropbtn'><i class="fa fa-caret-down">1</i></button>
+      <button class='dropbtn'><i class="fa fa-caret-down"></i></button>
         <div class='drop-content'>
           {{ link.title | link_to: link.url }}
         </div>
