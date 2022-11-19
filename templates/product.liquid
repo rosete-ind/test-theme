@@ -9,7 +9,7 @@
     {% for variant in product.variants %}
       <option value={{ variant.id }}>
         {{ variant.title }}
-    {% endfor %}
+    {% endfor %}{{ product.title | link_to: product.url }}
   </select>
   <button type='submit'>Add to Cart</button>
   {% endform %}
