@@ -6,7 +6,7 @@
   <div class='nav-link-container'>
     {%-  for link in linklists.main-menu.links -%}
       <div class='nav-links'>
-      {{ link.title | link_to: link.url }}
+      <button class='dropbtn'>{{ link.title | link_to: link.url }}</button>
       </div>
       {%- endfor -%}
   </div>
